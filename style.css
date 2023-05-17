@@ -1,0 +1,619 @@
+@font-face {
+    font-family:America-mid ;
+    src: url(./GT-America-Expanded-Medium.woff2);
+}
+@font-face {
+    font-family:America-bold ;
+    src: url(./GT-America-Compressed-Bold.woff2);
+}
+@font-face {
+    font-family:America-thin ;
+    src: url(./GT-America-Compressed-Thin.woff2);
+}
+@font-face {
+    font-family:America-com ;
+    src: url(./GT-America-Compressed-Regular.woff2);
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    position: fixed;
+    z-index: 99;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    /* background-color: red; */
+}
+nav h3{
+    font-family: America-bold;
+    font-size: 3.5vh;
+    color:  #c45508;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+nav h3::after{
+    content:"";
+    width: 100%;
+    height: 2px;
+    background-color:#c45508;
+    color: #c45508;
+    z-index: 999;
+    position: absolute;
+    bottom: 0%;
+    left: -100%;
+    transition: all ease-in-out .3s;
+}
+nav h3:hover::after{
+    left: 0;
+}
+svg{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1.4);
+    -ms-transform: translate(-50%, -50%) scale(1.4);
+    transform: translate(-50%, -50%) scale(1.4);
+    z-index: 99;
+    fill: #c45508;
+}
+path{
+    fill: inherit;
+}
+#page1{
+    width: 100%;
+    height: 100vh;
+    background-image:url(https://cdn.sanity.io/images/sjvffa0f/production/b66561b8981387290c0f682665512759c66aa7bb-2880x1796.png/image.png?bg=F2F1EC&w=1440&h=898&auto=format);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+#page1::after{
+    content: "MARKETING & SELLING TEXAS RANCHES";
+    z-index: 999;
+    color: #c45508;
+    position: absolute;
+    right: 2%;
+    top: 72%;
+    font-family: America-com;
+    font-weight: 100;
+    font-size: 1vmax;
+    letter-spacing: 1px;
+
+}
+#page1::before{
+    content: "BOWNDS RANCHES. ZEST. 1885";
+    z-index: 999;
+    color: #c45508;
+    position: absolute;
+    left: 2%;
+    top: 72%;
+    font-family: America-com;
+    font-weight: 100;
+    font-size: 1vmax;
+    letter-spacing: 1px;
+}
+#page1 h1{
+    font-family: America-bold;
+    text-align: center;
+    left: 1%;
+    font-size: 15vmax;
+    bottom: -6%;
+    color: #c45508;
+
+}
+#b{
+    margin-left: 20px;
+}
+#r{
+    margin-left: 40px;
+}
+#top{
+    overflow: hidden;
+    width: 100%;
+    height: 12vmax;
+    /* background-color: red; */
+    position: absolute;
+    align-items: center;
+    bottom: 1%;
+    display: flex;
+}
+#overlay{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    
+}
+#scroll{
+    width: 100px;
+   height: 40px;
+   position: absolute; 
+   z-index: 9999;
+   top: 20%;
+   left: 50%;
+   background-image: url(https://bowndsranches.com/textures/buttonDarkBg.svg);
+   color: white;
+   font-family: America-mid;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   letter-spacing: -2px;
+   font-size: .8vmax;
+   -webkit-transition: all ease-out 0.3s;
+   -o-transition: all ease-out 0.3s;
+   transition: all ease-out 0.3s;
+   scale: 0;
+
+}
+#page2{
+    width: 100%;
+    min-height: 90vh;
+    background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/217c65c6aa3412acac7b3d2fa8adc9020e487780-2724x1936.jpg/map.jpg?rect=1,0,2723,1936&w=640&h=455&auto=format);
+    background-position: center;
+    background-size: cover;
+padding-top: 80px;
+}
+#page2 h1{
+    font-family: America-bold;
+    font-size: 13vw;
+    font-weight: 900;
+    letter-spacing: -5px;
+    text-align: center;
+    line-height: 160px;
+
+}
+#page3{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#page3 #img{
+    position: absolute;
+    left: 28%;
+    height: 60vmax;
+    width: 43vmax;
+    top: -35%;
+    transform: rotate(-6deg);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .1s;
+}
+#page3 #img1{
+    position: absolute;
+    height: 8vmax;
+    right: 25%;
+    top: -15%;
+}
+#page4{
+    width: 100%;
+    height: 80vh;
+}
+#page4 h1{
+    font-family: America-bold;
+    font-size: 13vw;
+    font-weight: 900;
+    letter-spacing: -5px;
+    text-align: center;
+    line-height: 160px;
+}
+#page4 h5{
+    text-align: center;
+    font-family: America-thin;
+    font-size: 1vmax;
+    margin-top: 20px;
+}
+#page5{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #171411;
+    padding-top: 100px;
+    cursor: pointer;
+}
+#page5 h1{
+    font-family: America-bold;
+    font-size: 8vw;
+    font-weight: 900;
+    letter-spacing: -5px;
+    text-align: center;
+    line-height: 110px;
+    color: white;
+}
+#page5 h2{
+    font-family: America-thin;
+    font-size: 8vw;
+    font-weight: 900;
+    
+    text-align: center;
+    line-height: 110px;
+    color: white;
+}
+#page5 p{
+    font-family: America-com;
+    font-size: 1vw;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+#page5>h5{
+    font-size: 1vmax;
+    color: white;
+    font-weight: 300;
+    font-family: America-com;
+    letter-spacing: 3px;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    left: 47%;
+    
+}
+#page5 img{
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+#imgdiv {
+    scale: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 150px;
+    background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/9b2b1e20d57cf6988eb3192c1a261b8475d701d4-8192x5464.jpg/JRP_BR_01_1165-Edit.jpg?rect=1038,632,3956,4832&bg=F2F1EC&fp-x=0.3681506849315068&fp-y=0.5578489448352462&w=640&h=815&fit=crop&crop=focalpoint&auto=format);
+    background-position: top;
+    background-size: cover;
+    -webkit-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+}
+
+#imgdiv h5 {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    color: #171411;
+    padding: 10px 10px;
+    z-index: 99;
+    font-family: America-com;
+    background-color: #fff;
+}
+#page6{
+    width: 100%;
+    height: 100vh;
+    background-color: #171411;
+}
+.elem{
+    width: 100%;
+    height: 10vmax;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-top: 1px solid white;
+cursor: pointer;
+}
+.elem h1{
+    font-family: America-bold;
+    font-size: 12vw;
+    opacity: 0.6;
+    color: white;
+    transition: opacity ease .3s;
+}
+.elem img{
+    width: 250px;
+    height: 400px;
+    scale: 0;
+    position: absolute;
+    -webkit-transition: opacity ease 0.1s;
+    -o-transition: opacity ease 0.1s;
+    transition: opacity ease 0.1s;
+    left: 0;
+}
+.move-cnt h2{
+    font-size: 150px;
+    margin-left: 10px;
+    display: inline-block;
+    animation-name: movingElem;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    font-family: America-bold;
+    color: white;
+    z-index: 100;
+    transition: opacity ease .1s;
+}
+.elem:nth-last-child(1){
+    border-bottom: 1px solid white;
+}
+.elem:hover .move-cnt{
+opacity: 1;
+}
+.elem:hover #h1{
+    scale: 0;
+    }
+.elem:hover img{
+    scale: 1;
+}
+.move-cnt{
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+    opacity: 0;
+    position: absolute;
+    top: -10%;
+}
+@keyframes movingElem {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+#page7{
+    width: 100%;
+    height: 100vh;
+    background-color: #171411;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#img-cnt{
+    height: 400px;
+    width: 600px;
+    background-color: red;
+    position: absolute;
+    rotate: 5deg;
+    background-image: url(./jungle.png);
+    background-position: center;
+    background-size: cover;
+}
+#img-cnt2{
+    height: 400px;
+    width: 600px;
+    z-index: 999;
+    background-color: red;
+    position: absolute;
+    
+    rotate: -4deg;
+    background-image: url(./horse.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#page8{
+    width: 100%;
+    height: 180vh;
+    background-color: #171411;
+    position: relative;
+    background-image: url(./last.png);
+    background-size: cover;
+    background-position: center;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    padding-top: 30px;
+}
+#box{
+    width: 88%;
+    height: 24vmax;
+    /* background-color: red; */
+    padding-left: 50px;
+    padding-top: 50px;
+
+}
+#box h1{
+    font-family: America-bold;
+    font-size: 7.5vw;
+    font-weight: 900;
+    color: white;
+    line-height: 100px;
+}
+#box2{
+    width: 35%;
+    height: 18vmax;
+    /* background-color: red; */
+    margin-left: 60%;
+    padding: 30px;
+}
+#box2 h5{
+    font-family: America-com;
+
+    font-size: 1.4vw;
+    color: white;
+    font-weight: 100;
+
+}
+#box2 #btn{
+   width: 200px;
+   height: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-family: America-thin;
+   font-weight: 600;
+   word-spacing: 6px;
+   letter-spacing: 2px;
+   position: relative;
+   border: 1px solid white;
+   overflow: hidden;
+   transition: all linear .3s;
+}
+#box2 #btn:hover .ovr{
+    bottom: 0;
+}
+#box2 #btn:hover {
+    border: none;
+}
+.ovr{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -100%;
+    background-color: white;
+    color: black;
+    font-family: America-thin;
+   font-weight: 600;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: all ease .1s;
+   word-spacing: 6px;
+   letter-spacing: 2px;
+   border: 1px solid rgb(2, 2, 2);
+}
+#box3{
+    width: 100%;
+    height: 44.5vmax;
+    /* background-color: red; */
+    padding-top: 10%;
+    position: relative;
+}
+#box3 h1{
+    text-align: center;
+    font-size: 4vw;
+    font-family: America-com;
+    line-height: 60px;
+    color: white;
+}
+#btn1{
+    width: 250px;
+   height: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-family: America-thin;
+   font-weight: 600;
+   word-spacing: 6px;
+   margin-left: 43%;
+   letter-spacing: 2px;
+   margin-top: 50px;
+   position: relative;
+   border: 1px solid white;
+   overflow: hidden;
+   transition: all linear .3s;
+
+}
+#box3 #btn1:hover .ovr1{
+    bottom: 0;
+}
+#box3 #btn1:hover {
+    border: none;
+}
+#box3 img{
+    height: 70px;
+    position: absolute;
+    right: 20%;
+    top: 32%;
+}
+.ovr1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -100%;
+    background-color: white;
+    color: black;
+    font-family: America-thin;
+   font-weight: 600;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: all ease .1s;
+   word-spacing: 6px;
+   letter-spacing: 2px;
+   border: 1px solid rgb(2, 2, 2);
+}
+
+
+#page9 {
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 100px 80px 100px 10px;
+}
+
+#page9 h1 {
+    font-size: 11vw;
+    color: #faf6ef;
+    text-transform: uppercase;
+    font-family: America-bold;
+}
+
+#page9-part2 {
+    color: #faf6ef;
+    padding-top: 40px;
+}
+
+
+#lola2 h2 {
+    font-size: 24px;
+    font-family: America-bold;
+    font-weight: 100;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.4px #111;
+    letter-spacing: -1px;
+    color: white;
+    margin-bottom: 13px;
+}
+
+#lola2 h3 {
+    font-size: 22px;
+    font-family: America-bold;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-top: -3px;
+    color: white;
+    -webkit-text-stroke: 0.6px #111;
+    letter-spacing: -1px;
+}
+
+#lola3 {
+    text-align: left;
+    margin-top: 40px;
+
+}
+
+#lola3 h4 {
+    font-size: 24px;
+    font-family: America-bold;
+    color: white;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-top: 3px;
+}
